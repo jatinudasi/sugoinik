@@ -10,9 +10,9 @@ function App() {
   }
   return (
     <div className="App">
-     {/* <Navbar handle={handlesearch} search={search} />
-     <Cards /> */}
-     <Form />
+     <Navbar handle={handlesearch} search={search} />
+     <Cards />
+     {/* <Form /> */}
 
      
     </div>
