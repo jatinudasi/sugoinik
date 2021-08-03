@@ -3,13 +3,14 @@ import "./Card.css"
 import Card from  "./Card"
 import axios from 'axios'
 
-function Cards() {
+function Cards({search}) {
     const [cardinfo,setcards] = useState([])
 
     useEffect(()=>{
-        axios.get("http://localhost:8000/user")
+        console.log("value of search form card",search)
+        axios.get(`${!search?'http://localhost:8000/user':`http://localhost:8000/user/search/${search}`}`)
         .then(res=>setcards(res.data))
-    },[])
+    })
     return (
         <div className="Cards">
             {

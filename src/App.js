@@ -14,6 +14,7 @@ function App() {
 
   const handlesearch =(e)=>{
     setsearch(e.target.value);
+    console.log('search value',search)
   }
   return (
     <div className="App">
@@ -22,7 +23,7 @@ function App() {
       <Form /> */}
       <Switch>
           <Route exact path="/">
-          <Cards />
+          <Cards search={search}/>
           </Route>
           <Route path="/add">
           <Form />
