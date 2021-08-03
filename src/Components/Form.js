@@ -10,8 +10,13 @@ function Form() {
     const handlesubmit =(e)=>{
         console.log("form submitted");
         e.preventDefault()
-        axios.post("",{name,email,info})
-        .then(res=>console.log(res))
+        axios.post("http://localhost:8000/user",{name,email,info,img:"https://i.ibb.co/6JZ8NyV/IMG.png"})
+        .then(res=>{
+            console.log(res)
+            setname('');
+            setemail('');
+            setinfo('')
+        })
         .catch(err=>console.log(err))
 
 

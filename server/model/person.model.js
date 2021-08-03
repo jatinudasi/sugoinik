@@ -5,6 +5,7 @@ const {Schema,model} = mongoose;
 const person = new Schema({
 email:{
     type:String,
+    lowercase:true,
     trim:true,
     required:true,
     match: /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/

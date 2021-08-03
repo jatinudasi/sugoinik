@@ -1,6 +1,7 @@
 .Cards{
     display: flex;
-    justify-content:space-between;
+    justify-content:flex-start;
+    align-items: center;
     flex-wrap:wrap;
     margin: 90px;
    

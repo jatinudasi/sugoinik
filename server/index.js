@@ -1,17 +1,17 @@
 const express = require("express");
-// const cors = require("cors");
+const cors = require("cors");
 // const logger = require("morgan");
 require("dotenv").config();
 require("./database/mongodbinit");
 
 const app = express();
-// app.use(cors());
+app.use(cors());
 app.use(express.json());
 // app.use(logger("dev"));
 
-// const allroutes = require("./routes/index");
+const allroutes = require("./routes/index.routes");
 
-// app.use(allroutes);
+app.use(allroutes);
 
 app.get("/", (req, res, next) => {
 	res.send("hello world");

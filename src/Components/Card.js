@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react'
 import './Card.css'
 
-function Card({name,email,info,Img}) {
+function Card({name,email,info,img}) {
     useEffect(()=>{
-        console.log(name,email,info,Img);
+        // console.log(name,email,info,Img);
     },[])
     
     return (
        
             <div className="Card">
             
-                <img src={Img}></img>
+                <img src={img} alt=''></img>
             
                 <div className="content">
                     <h2>{name}</h2>
