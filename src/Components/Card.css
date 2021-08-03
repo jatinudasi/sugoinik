@@ -1,0 +1,44 @@
+.Cards{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    margin: 90px;
+   
+
+}
+.Card{
+    
+    width: 22vw;
+   
+    background-color: #d0eafb;
+    margin: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+img{
+    width:22vw;
+}
+.content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+@media screen and (max-width: 320px) {
+   .content >h1{
+       font-size: 10px;
+   }
+   .content >p{
+    font-size: 14px;
+}
+   .Card{
+       width: 60vw;
+       margin: 0px;
+       margin-left: -20px;
+       margin-top: 30px;
+   }
+   img{
+    width:62vw;
+}
+
+  }
